@@ -154,7 +154,6 @@ logs
 frontend/visitorlog/npm-debug.log*
 frontend/visitorlog/yarn-debug.log*
 yarn-error.log*
-frontend/visitorlog/
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 frontend/visitorlog/build/Release
