@@ -147,3 +147,39 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Logs
+logs
+*.log
+frontend/visitorlog/npm-debug.log*
+frontend/visitorlog/yarn-debug.log*
+yarn-error.log*
+frontend/visitorlog/
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+frontend/visitorlog/build/Release
+
+# Dependency directories
+frontend/visitorlog/node_modules/
+frontend/visitorlog/jspm_packages/
+
+# Distribution directories
+frontend/visitorlog/dist/
+
+# Typescript v1 declaration files
+frontend/visitorlog/typings/
+
+# Optional npm cache directory
+frontend/visitorlog/.npm
+
+# Optional eslint cache
+frontend/visitorlog/.eslintcache
+
+# Optional REPL history
+frontend/visitorlog/.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+frontend/visitorlog/.yarn-integrity
