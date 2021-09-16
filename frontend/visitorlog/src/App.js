@@ -24,23 +24,26 @@ class App extends Component {
   };
 
   renderLogs() {
-    console.log(this.state.logs);
     const logs = this.state.logs;
 
     return logs.map((log) => (
-      <tr>
+      <tr key={log.id}>
         <td>{log.first_name}</td>
         <td>{log.last_name}</td>
         <td>{log.email}</td>
         <td>{log.in_time}</td>
+        <td><button className="btn btn-danger" onClick={() => this.delete(log.id)}>Delete {log.id}</button></td>
       </tr>
     ));
   }
 
+  delete(id) {
+    axios.delete("http://localhost:8000/api/logs/"+id).then(() => alert("we here")).catch((e) => alert(e))
+  }
 
   render() {
     return (
-      <div className="log">
+      <div className="container">
         <table className="table">
           <thead>
             <tr>
